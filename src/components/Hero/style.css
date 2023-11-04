@@ -1,0 +1,72 @@
+.box {
+    height: 504px;
+    width: 1440px;
+}
+
+.box .hero-section {
+    height: 504px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 1444px;
+}
+
+.box .overlap-group {
+    height: 504px;
+    position: relative;
+    width: 1440px;
+}
+
+.box .bg {
+    background-color: #f1f3ff;
+    height: 500px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+}
+
+.box .img-car {
+    height: 407px;
+    left: 736px;
+    position: absolute;
+    top: 97px;
+    width: 704px;
+}
+
+.box .sewa-rental-mobil {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 36px;
+    font-weight: 700;
+    left: 136px;
+    letter-spacing: 0;
+    line-height: 54px;
+    position: absolute;
+    top: 177px;
+    width: 568px;
+}
+
+.box .text-wrapper {
+    color: #000000;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    left: 136px;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: absolute;
+    top: 301px;
+    width: 468px;
+}
+
+.box .button-instance {
+    background-color: var(--primarylimegreen-04) !important;
+    left: 136px !important;
+    position: absolute !important;
+    top: 377px !important;
+}
+
+.box .design-component-instance-node {
+    font-family: "Arial-Bold", Helvetica !important;
+}
