@@ -3,42 +3,49 @@
     padding: 0;
 }
 
-.navbar {
-    background-color: #F1F3FF;
-    display: flex;
-    width: 100%;
+html {
+    scroll-behavior: smooth;
 }
 
-.wrapper {
+.navbar {
+    background-color: #f1f3ff;
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler-icon {
+    font-size: 15px;
+    padding: 5px;
+    border: none;
+}
+
+.navbar-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    width: 1055px;
+    background-color: #f1f3ff;
+    justify-content: space-between !important;
+    width: 1190px !important;
     margin: auto;
 }
 
-.navbar .left {
-    display: flex;
-}
-
-.navbar .logo {
-    background-color: #0D28A6;
+.logo {
+    background-color: #0d28a6;
     width: 100px;
     height: 34px;
 }
 
-.navbar .right {
+.nav-link {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    justify-content: space-between;
+    padding-right: 40px !important;
 }
 
-.navbar .link {
+.nav-link a {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding: 12px;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0px 30px 10px 0px;
 }

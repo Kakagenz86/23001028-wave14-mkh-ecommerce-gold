@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 1168px;
+    height: 326px;
+    background-color: #0D28A6;
+    margin: auto;
+    color: white;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner .text {
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.banner .text-2 {
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    width: 468px;
+    margin-left: 60px;
+}
+
+.banner .btn-banner {
+    margin-left: 235px;
+    text-decoration: none;
+    border: none;
+    margin-top: 50px;
+    border-radius: 2px;
+    background-color: #5CB85F;
+    padding: 10px;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+}

@@ -1,11 +1,12 @@
 import LandingPage from './pages/LandingPage'
-import car from './assets/car.png'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap';
 
 function App() {
-
   return (
     <div>
-      <img src="car " alt="" />
       <LandingPage/>
     </div>
   )

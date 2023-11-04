@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    position: relative;
+    height: 428px;
+    width: 1027px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .background-box {
+    padding-left: 110px;
+}
+
+.services .image-service1 {
+    width: 350px;
+    height: 350px;
+    background-color: #0d28a6;
+    margin-top: 30px;
+    border-radius: 100%;
+}
+
+.services .image-service2 {
+    width: 350px;
+    margin-top: -500px;
+    height: 350px;
+}
+
+.services .circle1 {
+    background-color: #fa2c5a;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    left: 400px;
+    top: 30px;
+}
+
+.services .circle2 {
+    background-color: #92d094;
+    position: absolute;
+    width: 133px;
+    height: 133px;
+    border-radius: 100%;
+    left: 1px;
+    top: 1px;
+}
+
+.services .circle3 {
+    background-color: #f9cc00;
+    position: absolute;
+    top: 330px;
+    left: 80px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.services .desc {
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.services .text-services {
+    position: relative;
+    width: 468px;
+    margin-top: -1px;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 36px;
+}
+
+.services .frame {
+    flex-direction: column;
+    display: inline-flex;
+    gap: 16px;
+}
+
+.services .sewa {
+    position: relative;
+    width: 468px;
+    margin-top: -15px;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+}
+
+.services .frame-2 {
+    flex-direction: column;
+    display: inline-flex;
+    gap: 16px;
+}
+
+.services .frame-3 {
+    display: inline-flex;
+    gap: 16px;
+    position: relative;
+    margin-top: -15px;
+}
+
+.services .group {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #cfd4ed;
+    border-radius: 100%;
+}
+
+.services .bi {
+    display: flex;
+    padding-left: 1px;
+    padding-top: 2px;
+}
+
+.services .p {
+    position: relative;
+    width: fit-content;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
