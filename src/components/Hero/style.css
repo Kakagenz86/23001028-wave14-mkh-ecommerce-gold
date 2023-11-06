@@ -76,3 +76,33 @@
     margin-top: 30px;
     margin-left: 50px;
 }
+
+@media (max-width:576px) {
+    .header-section {
+        flex-direction: column;
+        margin-left: -150px;
+    }
+
+    .sewa-rental-mobil {
+        width: 328px;
+    }
+    
+    .section-text {
+        width: 328px;
+    }
+    
+    .background {
+        position: absolute;
+        left: 22px;
+        top: 680px;
+        width: 500px;
+        overflow: hidden;
+        height: 120px;
+    }
+    
+    .image-car {
+        width: 500px;
+        height: 250px;
+        margin-left: 130px;
+    }
+}

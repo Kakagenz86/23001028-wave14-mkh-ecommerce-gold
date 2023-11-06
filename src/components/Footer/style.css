@@ -46,3 +46,9 @@
     line-height: 30px;
     font-weight: 400;
 }
+
+@media (max-width:576px) {
+    .footer .text-wrapper-2 {
+        margin-left: -70px;
+    }
+}

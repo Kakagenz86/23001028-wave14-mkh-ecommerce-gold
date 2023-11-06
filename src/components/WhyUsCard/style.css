@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.whyUs {
+    width: 1230px;
+    margin-left: 150px !important;
+    background-color: red;
+}
+
+.whyUs .text {
+    margin-top: 80px;
+}
+
+.whyUs .paragraf {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.whyUs .frame3 {
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px 24px 0px 24px;
+    border-radius: 8px;
+    border: 1px solid #D0D0D0;
+    width: 280px;
+}
+
+.whyUs .bi-hand-thumbs-up,
+.bi-clock,
+.bi-award,
+.bi-tag {
+    font-size: 15px;
+    padding: 5px 8px 5px 8px;
+    color: white;
+    border-radius: 100%;
+}
+
+.whyUs .text-wrapper-2 {
+    font-weight: 700;
+}
+
+.whyUs .p {
+    white-space: pre-line;
+}
