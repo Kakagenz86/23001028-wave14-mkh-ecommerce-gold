@@ -3,17 +3,11 @@
     padding: 0;
 }
 
-.section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #f1f3ff;
-}
-
 .header-section {
     display: flex;
-    align-items: flex-start;
-    margin-top: 70px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-color: #f1f3ff;
 }
 
 .section-box {
@@ -43,11 +37,6 @@
 }
 
 .button {
-    width: fit-content;
-    margin-top: 20px;
-}
-
-.text-here {
     padding: 8px 12px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
@@ -62,14 +51,14 @@
     background-color: #0d28a6;
     position: absolute;
     left: 835px;
-    top: 252px;
+    top: 232px;
     width: 684px;
     height: 230px;
     border-radius: 60px 0px 0px 0px;
 }
 
 .image-car {
-    z-index: 1;
+    position: relative;
     width: 720px;
     height: 380px;
     padding-left: 50px;

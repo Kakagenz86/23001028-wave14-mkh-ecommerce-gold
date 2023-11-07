@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial .p1 {
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 15px;
+}
+
+.testimonial .p2 {
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testi {
+    columns: 3;
+    position: relative;
+    width: 619px;
+    height: 270px;
+    background-color: #f1f3ff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.testi .icons {
+    color: #f9cc00;
+    display: inline;
+    font-size: 16px;
+}
+
+.testi .text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 69px;
+    left: 172px;
+}
+
+.testi .text-wrapper {
+    position: relative;
+    width: 415px;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.testi .div {
+    position: relative;
+    width: 415px;
+    font-family: "Arial-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.testi .img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 95px;
+    left: 46px;
+    object-fit: cover;
+}
+
+.testimonial .carousel {
+    margin: auto;
+    width: 88px;
+}
+
+.testimonial .carousel-box {
+    width: 70px;
+    margin: auto;
+}
+
+.testimonial .bi-chevron-left,
+.testimonial .bi-chevron-right {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0px 2px 0px 2px;
+    margin-left: 5px;
+}
+
+.testimonial .bi-chevron-left:active,
+.testimonial .bi-chevron-right:active {
+    background-color: rgba(92, 184, 95, 1);
+    color: white;
+    border: 1px solid rgba(92, 184, 95, 1);
+    border-radius: 100%;
+    display: inline;
+    padding: 0px 2px 0px 2px;
+}

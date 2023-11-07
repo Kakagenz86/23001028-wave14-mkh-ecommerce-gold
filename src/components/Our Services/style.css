@@ -5,7 +5,6 @@
 
 .services {
     position: relative;
-    height: 428px;
     width: 1027px;
     margin: auto;
     margin-top: 100px;
@@ -15,20 +14,6 @@
 
 .services .background-box {
     padding-left: 110px;
-}
-
-.services .image-service1 {
-    width: 350px;
-    height: 350px;
-    background-color: #0d28a6;
-    margin-top: 30px;
-    border-radius: 100%;
-}
-
-.services .image-service2 {
-    width: 350px;
-    margin-top: -500px;
-    height: 350px;
 }
 
 .services .circle1 {
@@ -61,12 +46,24 @@
     border-radius: 100%;
 }
 
-.services .desc {
-    margin-top: 20px;
+.services .image-service1 {
+    width: 350px;
+    height: 350px;
+    background-color: #0d28a6;
+    margin-top: 30px;
+    border-radius: 100%;
+}
+
+.services .image-service2 {
+    width: 350px;
+    margin-top: -500px;
+    height: 350px;
+}
+
+.services .frame {
+    flex-direction: column; 
     display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
 }
 
 .services .text-services {
@@ -79,12 +76,6 @@
     font-size: 24px;
     letter-spacing: 0;
     line-height: 36px;
-}
-
-.services .frame {
-    flex-direction: column;
-    display: inline-flex;
-    gap: 16px;
 }
 
 .services .sewa {
@@ -104,6 +95,7 @@
 }
 
 .services .frame-3 {
+    flex-direction: column;
     display: inline-flex;
     gap: 16px;
     position: relative;
@@ -119,6 +111,7 @@
 }
 
 .services .bi {
+    color: #0D28A6;
     display: flex;
     padding-left: 1px;
     padding-top: 2px;
@@ -126,12 +119,26 @@
 
 .services .p {
     position: relative;
-    width: fit-content;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
     font-size: 14px;
-    letter-spacing: 0;
-    line-height: 20px;
-    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .services {
+        flex-wrap: wrap;
+        margin-bottom: 250px;
+        margin-left: 20px;
+    }
+
+    .services .p {
+        font-size: 18px;
+    }
+
+    .services .background-box .image-service2 {
+        position: relative;
+        top: 204px;
+        right: 350px;
+    }
 }

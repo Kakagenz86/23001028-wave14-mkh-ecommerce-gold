@@ -6,7 +6,6 @@ import 'bootstrap/dist/js/bootstrap';
 import LandingPage from './pages/LandingPage'
 
 function App() {
-
   return (
     <div>
       <LandingPage/>

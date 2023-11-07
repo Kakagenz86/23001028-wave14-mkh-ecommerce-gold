@@ -3,13 +3,17 @@ import './style.css'
 
 let WhyUsCard = (props) => {
     return (
-        <div className="row WhyUs" id="WhyUs">
-            <h1>Why Us?</h1>
-            <p>Mengapa harus pilih binar car rental</p>
-            <div className="content col-md-6 col-sm-12 col-xl-3 pt-3">
-                <i className={`${props.icons} text-center fs-5 pe-1 ps-1 text-white rounded-circle`}></i><br />
-                <h1>{props.title}</h1>
-                <p>{props.description}</p>
+        <div className="WhyUs" id="WhyUs">
+                <h1 className="text">Why Us</h1>
+                <p className="paragraf">Mengapa harus pilih Binar Car Rental?</p>
+            <div className="content">
+                {props.data.map((WhyUs) => (
+                    <div className="wrapper">
+                        <i className={WhyUs.icons}></i>
+                        <h5 className="fw-bold mt-4">{WhyUs.title}</h5>
+                        <p className="fw-medium lh-sm mt-4">{WhyUs.description}</p>
+                    </div>
+                    ))}
             </div>
         </div>
     )

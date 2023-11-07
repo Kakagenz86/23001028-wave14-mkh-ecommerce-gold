@@ -10,7 +10,7 @@ const Banner = () => {
                     <p class="text">Sewa Mobil di (Lokasimu) Sekarang</p>
                     <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.</p>
-                        <button class="btn-banner">Mulai Sewa Mobil</button>
+                        <a href="src/pages/DetailCarPage/index.jsx"><button class="btn-banner">Mulai Sewa Mobil</button></a>
                 </div>
             </div>
         </div>
