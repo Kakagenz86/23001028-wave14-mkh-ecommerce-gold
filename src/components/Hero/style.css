@@ -36,7 +36,7 @@
     line-height: 20px;
 }
 
-.button {
+.btn-nav {
     padding: 8px 12px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
@@ -49,49 +49,48 @@
 
 .background {
     background-color: #0d28a6;
-    position: absolute;
-    left: 835px;
-    top: 232px;
+    position: relative;
+    margin-top: 170px;
+    display: flex;
     width: 684px;
+    justify-content: end;
     height: 230px;
     border-radius: 60px 0px 0px 0px;
 }
 
 .image-car {
     position: relative;
-    width: 720px;
     height: 380px;
-    padding-left: 50px;
-    margin-top: 30px;
-    margin-left: 50px;
+    bottom: 160px;
 }
 
 @media (max-width:576px) {
     .header-section {
-        flex-direction: column;
-        margin-left: -150px;
+        position: relative;
+        height: 630px;
+        display: flex;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .section-box {
+        right: 120px;
+        position: relative;
+        margin-top: -70px;
     }
 
     .sewa-rental-mobil {
-        width: 328px;
+        width: 300px;
+        position: relative;
     }
     
     .section-text {
-        width: 328px;
-    }
-    
-    .background {
-        position: absolute;
-        left: 22px;
-        top: 680px;
-        width: 500px;
-        overflow: hidden;
-        height: 120px;
+        position: relative;
+        width: 400px
     }
     
     .image-car {
-        width: 500px;
-        height: 250px;
-        margin-left: 130px;
+        position: relative;
+        height: 290px;
     }
 }

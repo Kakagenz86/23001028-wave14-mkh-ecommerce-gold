@@ -1,31 +1,40 @@
 import React from 'react'
+import 'jquery';
+import 'popper.js';
+import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
-import Image1 from '../../assets/image/img1.png'
-import Image2 from '../../assets/image/img2.png'
+import Carousel from 'react-bootstrap/Carousel';
 
-const Testimonial = ({data}) => {
+function Testimonial(props) {
     return (
-        <div className="testimonial" id='Testimonial'>
-            <div className='p1'>{data.header}</div>
-            <div className='p2'>{data.paragraf}</div>
+        <div className='testimonial'>
+            <p className='p1'>Testimonial</p>
+            <p className='p2'>Berbagai review positif dari pelanggan kami</p>
+        <Carousel data-bs-theme="dark">
+        {props.data.map((Testi, index) => (
+            <Carousel.Item key={index}>
+            <div className="list-testi">
                 <div className="testi">
-                    <img className='img' src={Image1} alt=""/>
-                    <img className='img' src={Image2} alt=""/>
-                    <div className="text">
+                <img className='img' src={Testi.image} alt="" />
+                <div className="text">
                     <div>
-                        <i className={`${data.icons} icons`}></i>
-                        <i className={`${data.icons} icons`}></i>
-                        <i className={`${data.icons} icons`}></i>
-                        <i className={`${data.icons} icons`}></i>
-                        <i className={`${data.icons} icons`}></i>
+                    {[...Array(5)].map((_, i) => (
+                        <i className={`${Testi.icons} icons`} key={i}></i>
+                    ))}
                     </div>
-                        <p className='text-wrapper'>{data.description}</p>
-                        <p className='div'>{data.name}</p>
+                    <div>
+                    <p className='text-wrapper' key={index}>{Testi.description}</p>
+                    <p className='div' key={index}>{Testi.name}</p>
                     </div>
                 </div>
+                </div>
+            </div>
+            </Carousel.Item>
+        ))}
+        </Carousel>
         </div>
-    );
+);
 }
 
 export default Testimonial;

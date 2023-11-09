@@ -9,6 +9,7 @@ html {
 
 .navbar {
     background-color: #f1f3ff;
+    margin-bottom: -50px;
 }
 
 .navbar .navbar-toggler,
@@ -32,10 +33,14 @@ html {
     height: 34px;
 }
 
+.sidebar {
+    width: 180px !important;
+}
+
 .nav-link {
     display: flex;
     justify-content: space-between;
-    padding-right: 40px !important;
+    gap: 15px;
 }
 
 .nav-link a {

@@ -48,7 +48,18 @@
 }
 
 @media (max-width:576px) {
+    .footer {
+        position: relative;
+        width: 200px;
+    }
+
+    .footer .header {
+        width: 200px;
+    }
+
     .footer .text-wrapper-2 {
-        margin-left: -70px;
+        position: relative;
+        left: -70px;
+        font-size: 13px;
     }
 }

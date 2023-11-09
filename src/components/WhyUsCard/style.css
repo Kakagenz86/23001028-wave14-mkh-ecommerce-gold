@@ -1,66 +1,107 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.WhyUs {
-    padding: 10px;
-    margin: auto;
-    width: 1168px;
-}
-
-.WhyUs .text {
-    font-weight: 700;
-}
-
-.WhyUs .paragraf {
-    margin-top: 20px;
-    font-weight: 700;
-}
-
-.WhyUs .content {
+.whyus {
     display: flex;
+    flex-direction: column;
+    padding: 100px;
 }
 
+.whyus .whyus-text {
+    font-weight: 700;
+    margin-left: 10px;
+}
 
-.WhyUs .wrapper {
-    font-size: 15px;
+.whyus .whyus-p {
     margin-top: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+.whyus .whyus-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.whyus .whyus-box {
+    font-size: 15px;
     padding: 24px 24px 0px 24px;
     border-radius: 8px;
     border: 1px solid #D0D0D0;
     width: 268px;
-    margin-right: 30px;
 }
 
 .bi-award,
 .bi-hand-thumbs-up,
 .bi-clock,
 .bi-tag {
-    font-size: 15px;
+    font-size: 20px;
     padding: 5px 8px 5px 8px;
     color: white;
     border-radius: 100%;
 }
 
+.whyus .whyus-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.whyus .whyus-desc {
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
 @media (max-width: 576px) {
-
-    .WhyUs .text {
-        margin-left: 175px;
-        margin-bottom: 30px;
-    }
-
-    .WhyUs .paragraf {
-        margin: auto 85px;
-    }
-
-    .WhyUs .content {
+    .whyus{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
+        margin-top: -140px;
     }
 
-    .WhyUs .wrapper {
-        width: 458px;
+    .whyus .whyus-text {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .whyus .whyus-p {
+        display: flex;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    .whyus .whyus-content {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .whyus .whyus-box {
+        width: 465px;
+        padding: 30px;
+        font-size: 20px;
+        /* position: relative; */
+        /* right: 90px; */
+    }
+
+    .whyus .whyus-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 15px;
+    }
+    
+    .whyus .whyus-desc {
+        line-height: 20px;
+        font-size: 17px;
+        font-weight: 700;
     }
 }

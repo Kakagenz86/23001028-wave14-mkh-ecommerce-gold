@@ -3,70 +3,98 @@
     padding: 0;
 }
 
-.FAQ {
+.faq {
+    display: flex;
+    justify-content: center;
+}
+
+.section-faq {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 1168px;
-    height: 344px;
 }
 
-.FAQ .text {
-    position: absolute;
-    width: 372px;
-    height: 92px;
-    top: 4px;
+.faq .faq-text {
+    display: flex;
+    flex-direction: column;
 }
 
-.FAQ .text-wrapper {
-    position: relative;
-    width: 368px;
+.faq .faq-text-wrapper {
+    display: flex;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: black;
     font-size: 24px;
-    margin-bottom: -20px;
 }
 
-.FAQ .paragraf {
-    position: relative;
-    width: 368px;
-    top: 52px;
-    font-family: "Arial-Bold", Helvetica;
-    font-weight: 700;
-    color: black;
-    font-size: 14px;
-}
-
-.FAQ .list-faq {
+.faq .faq-p {
     display: flex;
-    margin-left: 500px;
-}
-
-.FAQ .overlap-group {
-    position: relative;
-    width: 668px;
-    height: 56px;
-    border-radius: 4px;
-    border: 1px solid;
-    border-color: #d4d4d4;
-}
-
-.FAQ .bi-chevron-down {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 15px;
-    left: 619px;
-}
-
-.FAQ .text-wrapper-2 {
-    position: absolute;
-    top: 17px;
-    left: 23px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: black;
     font-size: 14px;
+}
+
+.faq .faq-group {
+    display: flex;
+    position: relative;
+    margin-left: 150px;
+}
+
+.faq .faq-wrapper-2 {
+    border: 1px solid #D4D4D4;
+    width: 668px;
+    padding: 15px;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: "Arial-Bold", Helvetica;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.faq .faq-item {
+    width: 668px;
+    border: 1px solid #D4D4D4;
+}
+
+@media (max-width:576px) {
+    .faq {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .faq .section-faq {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq .faq-text-wrapper {
+        margin: auto;
+        font-size: 28px !important;
+    }
+
+    .faq .faq-group {
+        margin-left: 0px;
+    }
+
+    .faq .faq-p {
+        font-size: 16px;
+        width: 350px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .faq .faq-wrapper-2 {
+        width: 470px;
+        font-size: 15px;
+        position: relative;
+        left: 5px;
+    }
+
+    .faq .faq-item {
+        width: 470px;
+        font-size: 15px;
+    }
 }
