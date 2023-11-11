@@ -9,7 +9,7 @@
     bottom: 100px;
 }
 
-.p1 {
+.testi-p1 {
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
@@ -19,7 +19,7 @@
     text-align: center; 
 }
 
-.p2 {
+.testi-p2 {
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
@@ -27,13 +27,20 @@
     text-align: center;
     margin-bottom: 40px;
 }
+
+.testi-wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 .list-testi {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
-.testi {
+.testi-card {
     width: 619px;
     height: 270px;
     background-color: #f1f3ff;
@@ -45,20 +52,20 @@
     flex-direction: row;
 }
 
-.testi .img {
+.testi-card .testi-img {
     width: 80px;
     height: 80px;
     position: relative;
-    left: 40px;
+    left: 50px;
 }
 
-.testi .text {
+.testi-card .testi-text {
     position: relative;
     right: 30px;
     gap: 8px;
 }
 
-.testi .text-wrapper {
+.testi-card .testi-desc {
     width: 415px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
@@ -69,7 +76,7 @@
     text-align: start;
 }
 
-.testi .div {
+.testi-card .testi-div {
     width: 415px;
     font-family: "Arial-Regular", Helvetica;
     font-weight: 400;
@@ -77,10 +84,33 @@
     font-size: 14px;
 }
 
-.testi .icons {
+.testi-card .testi-star {
     color: #f9cc00;
     font-size: 16px;
     align-self: center;
+}
+
+.testimonial .testi-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.testimonial .testi-icon {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.testimonial .testi-icon:active {
+    background-color: rgba(92, 184, 95, 1);
+    color: white;
+    border: 1px solid rgba(92, 184, 95, 1);
+    border-radius: 100%;
 }
 
 @media (max-width:576px) {

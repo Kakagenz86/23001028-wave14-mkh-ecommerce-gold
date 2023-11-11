@@ -1,39 +1,49 @@
 import React from 'react'
-import 'jquery';
-import 'popper.js';
-import 'bootstrap/dist/js/bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
-import Carousel from 'react-bootstrap/Carousel';
+import { useState } from 'react';
+import * as Icon from 'react-bootstrap-icons';
 
 function Testimonial(props) {
+    const [currentIndex, setCurrentIndex] = useState(0)
+        // Fungsi untuk menggeser item ke kiri
+    const handlePrevClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? props.data.length - 1 : prevIndex - 1));
+    };
+    
+    // Fungsi untuk menggeser item ke kanan
+    const handleNextClick = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === props.data.length - 1 ? 0 : prevIndex + 1));
+    };
+
     return (
-        <div className='testimonial'>
-            <p className='p1'>Testimonial</p>
-            <p className='p2'>Berbagai review positif dari pelanggan kami</p>
-        <Carousel data-bs-theme="dark">
+    <div className='testimonial' id='Testimonial'>
+            <p className='testi-p1'>Testimonial</p>
+            <p className='testi-p2'>Berbagai review positif dari pelanggan kami</p>
+            <div className="testi-wrap">
         {props.data.map((Testi, index) => (
-            <Carousel.Item key={index}>
             <div className="list-testi">
-                <div className="testi">
-                <img className='img' src={Testi.image} alt="" />
-                <div className="text">
+                <div className="testi-card">
+                        <img className='testi-img' src={Testi.image} alt="" />
+                <div className="testi-text">
                     <div>
                     {[...Array(5)].map((_, i) => (
-                        <i className={`${Testi.icons} icons`} key={i}></i>
-                    ))}
+                        <i className={`${Testi.icons} testi-star`} key={i}></i>
+                        ))}
                     </div>
                     <div>
-                    <p className='text-wrapper' key={index}>{Testi.description}</p>
-                    <p className='div' key={index}>{Testi.name}</p>
+                    <p className='testi-desc' key={index}>{Testi.description}</p>
+                    <p className='testi-div' key={index}>{Testi.name}</p>
                     </div>
                 </div>
                 </div>
             </div>
-            </Carousel.Item>
         ))}
-        </Carousel>
+            </div>
+        <div class="testi-carousel">
+                <i class="testi-icon" onClick={handlePrevClick}><Icon.ChevronLeft/></i>
+                <i class="testi-icon" onClick={handleNextClick}><Icon.ChevronRight/></i>
         </div>
+    </div>
 );
 }
 

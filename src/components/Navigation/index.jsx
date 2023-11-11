@@ -1,12 +1,13 @@
 import React from "react";
 import './style.css'
+import logo from '../../assets/image/logo.png'
 
 const Navigation = () => {
     return (
         <div>
             <nav class="navbar navbar-expand-sm">
                 <div class="container navbar-header">
-                    <div class="logo"></div>
+                    <img className="logo" src={logo} alt="binar-logo"/>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>

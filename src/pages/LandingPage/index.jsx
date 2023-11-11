@@ -105,7 +105,7 @@ const LandingPage = () => {
         <div>
             <Navigation/>
 
-            <Hero/>
+            <Hero showButton={true}/>
 
             <OurServices data={Our}/>
             

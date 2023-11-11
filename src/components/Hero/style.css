@@ -45,6 +45,7 @@
     font-size: 14px;
     border-radius: 2px;
     text-decoration: none;
+    border: none;
 }
 
 .background {
@@ -91,6 +92,14 @@
     
     .image-car {
         position: relative;
-        height: 290px;
+        height: 250px;
+        right: 30px;
+    }
+
+    .background {
+        position: relative;
+        height: 100px;
+        width: 480px;
+        left: 30px;
     }
 }

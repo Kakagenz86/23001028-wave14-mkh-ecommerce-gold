@@ -28,13 +28,12 @@ html {
 }
 
 .logo {
-    background-color: #0d28a6;
     width: 100px;
-    height: 34px;
+    height: 30px;
 }
 
 .sidebar {
-    width: 180px !important;
+    width: 250px !important;
 }
 
 .nav-link {
