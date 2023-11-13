@@ -15,7 +15,7 @@ const Faq = (props) => {
                     {props.data.map((FaqSection, index) => (
                                     <div className="mt-3 faq-group">
                                         <Dropdown>
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic"  className='faq-wrapper-2' key={index}>
+                                            <Dropdown.Toggle id="dropdown-basic"  className='faq-wrapper-2' key={index}>
                                             {FaqSection.text}
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu className='faq-item'>

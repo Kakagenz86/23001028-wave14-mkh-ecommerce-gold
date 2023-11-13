@@ -75,7 +75,7 @@
     }
 
     .section-box {
-        right: 120px;
+        left: -80px;
         position: relative;
         margin-top: -70px;
     }

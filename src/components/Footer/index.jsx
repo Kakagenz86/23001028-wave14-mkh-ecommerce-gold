@@ -14,10 +14,10 @@ const Footer = () => {
                         <p class="footer-text-wrapper">081-233-334-808</p>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xl-3 footer-nav">
-                        <a class="footer-text-wrapper-2" href="#Services" >Our services</a>
-                        <a class="footer-text-wrapper-2" href="#WhyUs" >Why Us</a>
-                        <a class="footer-text-wrapper-2" href="#Testimonial" >Testimonial</a>
-                        <a class="footer-text-wrapper-2" href="#FAQ" >FAQ</a>
+                        <a class="footer-text-wrapper-2" href="/#Services" >Our services</a>
+                        <a class="footer-text-wrapper-2" href="/#WhyUs" >Why Us</a>
+                        <a class="footer-text-wrapper-2" href="/#Testimonial" >Testimonial</a>
+                        <a class="footer-text-wrapper-2" href="/#FAQ" >FAQ</a>
                     </div>
                     <div class="col-md-6 col-sm-12 col-xl-3 footer-coonect">
                         <p class="text-wrapper">Connect with us</p>

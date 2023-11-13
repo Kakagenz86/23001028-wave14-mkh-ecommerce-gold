@@ -72,12 +72,6 @@ const LandingPage = () => {
         name: 'John Dee 32, Bromo'
     },
     {
-        image: Image1,
-        icons: "bi bi-star-fill",
-        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
-        name: 'John Dee 32, Bromo'
-    },
-    {
         image: Image2,
         icons: "bi bi-star-fill",
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',

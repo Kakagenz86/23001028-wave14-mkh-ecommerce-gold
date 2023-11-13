@@ -6,14 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import SearchSection from '../../components/SearchSection';
-import ListCar from '../../components/List Car';
+import Hero from '../../components/Hero'
 
 const SearchResult = () => {
     return ( 
         <div>
             <Navigation/>
+            <Hero/>
             <SearchSection/>
-            {/* <ListCar/> */}
             <Footer/>
         </div>
     );

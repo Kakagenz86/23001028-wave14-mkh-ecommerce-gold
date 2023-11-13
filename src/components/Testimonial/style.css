@@ -7,6 +7,7 @@
 .testimonial {
     position: relative;
     bottom: 100px;
+    overflow: hidden;
 }
 
 .testi-p1 {
@@ -32,6 +33,9 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+    transition: transform 0.8s ease-in-out;
+    position: relative;
+    left: 220px;
 }
 
 .list-testi {
@@ -45,7 +49,7 @@
     height: 270px;
     background-color: #f1f3ff;
     border-radius: 8px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.30);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,39 +118,42 @@
 }
 
 @media (max-width:576px) {
-    .testi {
-    position: relative;
-    width: 450px;
-    height: 500px;
-    flex-direction: column;
-    }
-
-    .testi .text-wrapper {
-        width: 350px;
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .testi .text {
+    .testi-wrap {
+        transition: transform 0.4s ease-in-out;
         position: relative;
-        left: -0px;
-        margin: auto;
+        justify-content: center;
     }
 
-    .testi .icons { 
+    .testimonial .testi-card {
+        width: 328px;
+        height: 392px;
+    }
+
+    .testimonial .testi-desc {
+        width: 230px;
+    }
+
+    .testimonial .testi-text {
         position: relative;
-        left: 135px;
+        right: 60px;
+        top: 60px;
+    }
+
+    .testimonial .testi-star { 
+        position: relative;
+        left: 90px;
         bottom: 10px;
     }
     
-    .testi .div {
+    .testimonial .testi-div {
         width: 150px;
         font-size: 15px;
     }
 
-    .testi .img {
-        top: 40px;
+    .testimonial .testi-img {
         position: relative;
-        left: -0px;
+        bottom: 120px;
+        left: 130px;
     }
+
 }
