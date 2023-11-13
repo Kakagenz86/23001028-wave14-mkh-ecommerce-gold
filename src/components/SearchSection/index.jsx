@@ -37,8 +37,8 @@ const SearchSection = () => {
     };
 
     const handlePrice = (e) => {
-        const selectedValue = e.target.value;
-        console.log(selectedValue);
+        const selectedValue = e.target.value
+        // console.log(selectedValue);
     
         if (selectedValue === 'option1') {
             setMinPrice(200000);
@@ -109,11 +109,11 @@ const SearchSection = () => {
                 </div>
                 <div>
                     <p className='rectangle-p2'>Harga</p>
-                        <select className='rectangle-div' name="" id="" onChange={handlePrice} value={minPrice}>
+                        <select className='rectangle-div' name="" id="" onChange={handlePrice}>
                             <option value="">Masukan Harga Sewa per Hari</option>
-                            <option value={'option1'}>Rp.200.000 - Rp.300.000</option>
-                            <option value={'option2'}>Rp.300.000 - Rp.400.000</option>
-                            <option value={'option3'}>Rp.400.000 - Rp.500.000</option>
+                            <option value='option1'>Rp.200.000 - Rp.300.000</option>
+                            <option value='option2'>Rp.300.000 - Rp.400.000</option>
+                            <option value='option3'>Rp.400.000 - Rp.500.000</option>
                         </select>
                 </div>
                 <div>
