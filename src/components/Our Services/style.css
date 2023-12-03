@@ -4,17 +4,17 @@
 }
 
 .services {
-    position: relative;
-    width: 1027px;
-    margin: auto;
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.services-wrapper {
+    width: 1000px;
 }
 
 .image-service {
-    display: flex;
-    position: relative;
+    width: 420px;
 }
 
 .services .frame {
@@ -25,21 +25,13 @@
 }
 
 .services .text-services {
-    position: relative;
-    width: 468px;
-    margin-top: -1px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
     font-size: 24px;
-    letter-spacing: 0;
-    line-height: 36px;
 }
 
 .services .sewa {
-    position: relative;
-    width: 468px;
-    margin-top: -15px;
     font-family: "Arial-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
@@ -80,46 +72,15 @@
 }
 
 @media (max-width: 576px) {
-    .services {
-        width: 450px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-
     .image-service {
-        width: 350px;
-        margin: auto;
-        position: relative;
-        right: 25px;
+        width: 80%;
     }
     
+    .frame {
+        width: 300px;
+    }
+
     .text-services {
-        font-size: 25px !important;
-        width: 350px !important;
-        position: relative;
-        left: 15px;
-    }
-
-    .sewa {
-        width: 350px !important;
-        position: relative;
-        left: 15px;
-        font-size: 15px !important;
-        margin-bottom: 25px;
-        line-height: 23px;
-    }
-
-    .services .p {
-        width: 350px;
-        font-size: 20px;
-        position: relative;
-        left: 15px;
-    }
-
-    .services .icons {
-        position: relative;
-        top: 15px;
-        left: 15px;
+        font-size: 20px !important;
     }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import 'jquery';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap';
@@ -67,6 +67,12 @@ const LandingPage = () => {
     },
     {
         image: Image2,
+        icons: "bi bi-star-fill",
+        description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
+        name: 'John Dee 32, Bromo'
+    },
+    {
+        image: Image1,
         icons: "bi bi-star-fill",
         description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"',
         name: 'John Dee 32, Bromo'

@@ -2,8 +2,8 @@ import React from 'react'
 import './style.css'
 import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
+import * as requestAPI from '../../api/api'
 
 const SearchSection = () => {
     const [list, setList] = useState([]);
@@ -18,14 +18,14 @@ const SearchSection = () => {
         handleGetList();
     }, []);
     
-    const handleGetList = () => {
-        axios
-            .get(`https://api-car-rental.binaracademy.org/customer/v2/car?name=${name}&category=${category}&minPrice=${minPrice}&maxPrice=${maxPrice}&isRented=${status}`)
-            .then((respon) => {
-                console.log(respon)
-                setList(respon.data.cars)
-            })
-            .catch((error) => console.log(error));
+    const handleGetList = async () => {
+            try {
+                const res = await requestAPI.listCar( name, category, minPrice, maxPrice, status )
+                console.log(res)
+                setList(res.data.cars)
+            } catch (error) {
+                console.log(error)
+            }
     };
 
     const handleSearch = (e) => {
@@ -92,7 +92,7 @@ const SearchSection = () => {
 
     return (
     <div className="rectangle">
-        <div className="header-rectangle">
+        <div className="container header-rectangle">
             <div className="rectangle-wrapper">
                 <div className="rectangle-text-box">
                     <p className="rectangle-p1">Nama Mobil</p>

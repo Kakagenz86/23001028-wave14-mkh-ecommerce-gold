@@ -6,18 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Faq = (props) => {
     return (
         <div className="faq" id='FAQ'>
-            <div className='section-faq'>
-                <div className="faq-text">
-                    <p className='faq-text-wrapper'>Frequently Asked Question</p>
-                    <p className='faq-p'>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <div className='container row'>
+                <div className="col-lg-6 col-md-12 col-sm-12">
+                    <p className='faq-title'>Frequently Asked Question</p>
+                    <p className='faq-desc'>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
                 </div>
-                <div className="faq-wrapper">
+                <div className="col-lg-6 col-md-12 col-sm-12">
                     {props.data.map((FaqSection, index) => (
-                                    <div className="mt-3 faq-group">
+                                    <div className="faq-group">
                                         <Dropdown>
-                                            <Dropdown.Toggle id="dropdown-basic"  className='faq-wrapper-2' key={index}>
-                                            {FaqSection.text}
-                                            </Dropdown.Toggle>
+                                            <div>
+                                                <Dropdown.Toggle id="dropdown-basic"  className='faq-wrapper' key={index}>
+                                                {FaqSection.text}
+                                                </Dropdown.Toggle>
+                                            </div>
                                             <Dropdown.Menu className='faq-item'>
                                                 <Dropdown.Item href="#/action-1">Agra</Dropdown.Item>
                                                 <Dropdown.Item href="#/action-2">Agya</Dropdown.Item>

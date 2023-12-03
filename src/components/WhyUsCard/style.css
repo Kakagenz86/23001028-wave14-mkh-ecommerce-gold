@@ -6,29 +6,28 @@
 
 .whyus {
     display: flex;
-    flex-direction: column;
-    padding: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
-.whyus .whyus-text {
+.whyus-text {
     font-weight: 700;
     margin-left: 10px;
 }
 
-.whyus .whyus-p {
-    margin-top: 20px;
+.whyus-p {
     font-weight: 700;
     margin-left: 10px;
     margin-bottom: 35px;
 }
 
-.whyus .whyus-content {
+.whyus-content {
+    gap: 20px;
     display: flex;
     justify-content: center;
-    gap: 50px;
 }
 
-.whyus .whyus-box {
+.whyus-box {
     font-size: 15px;
     padding: 24px 24px 0px 24px;
     border-radius: 8px;
@@ -46,62 +45,38 @@
     border-radius: 100%;
 }
 
-.whyus .whyus-title {
+.whyus-title {
     font-size: 18px;
     font-weight: 700;
     margin-top: 15px;
 }
 
-.whyus .whyus-desc {
-    line-height: 20px;
+.whyus-desc {
     font-size: 15px;
     font-weight: 700;
 }
 
 @media (max-width: 576px) {
-    .whyus{
-        display: flex;
-        flex-direction: column;
-        margin-top: -140px;
-    }
-
-    .whyus .whyus-text {
+    .whyus-text {
         font-size: 25px;
         display: flex;
+        width: 200px;
         justify-content: center;
     }
 
-    .whyus .whyus-p {
+    .whyus-p {
         display: flex;
-        font-size: 13px;
+        width: 350px;
+        font-size: 15px;
         justify-content: center;
     }
 
     .whyus .whyus-content {
         display: flex;
-        /* flex-direction: column; */
-        justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
     }
 
     .whyus .whyus-box {
-        width: 465px;
-        padding: 30px;
-        font-size: 20px;
-        /* position: relative; */
-        /* right: 90px; */
-    }
-
-    .whyus .whyus-title {
-        font-size: 20px;
-        font-weight: 700;
-        margin-top: 15px;
-    }
-    
-    .whyus .whyus-desc {
-        line-height: 20px;
-        font-size: 17px;
-        font-weight: 700;
+        width: 300px;
     }
 }

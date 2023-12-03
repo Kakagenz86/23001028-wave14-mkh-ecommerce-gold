@@ -4,10 +4,11 @@ import logo from '../../assets/image/logo.png'
 
 const Navigation = () => {
     return (
-        <div>
-            <nav class="navbar navbar-expand-sm">
-                <div class="container navbar-header">
-                    <img className="logo" src={logo} alt="binar-logo"/>
+            <nav class="navbar sticky-top navbar-expand-sm">
+                <div class="container">
+                    <a href="/#">
+                        <img className="logo" src={logo} alt="binar-logo"/>
+                    </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -27,7 +28,6 @@ const Navigation = () => {
                     </div>
                 </div>
             </nav>
-        </div>
     )
 }
 

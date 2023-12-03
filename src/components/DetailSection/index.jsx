@@ -3,28 +3,28 @@ import './style.css'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
+import * as requestAPI from '../../api/api'
 
 const DetailSection = () => {
     const [car, setCar] = useState({});
-    const param = useParams()
+    const {id} = useParams()
 
     useEffect(() => {
         handleGetList();
     }, []);
 
-    const handleGetList = () => {
-        axios
-        .get(`https://api-car-rental.binaracademy.org/customer/car/${param.id}`)
-        .then((respon) => {
-            console.log(respon)
-            setCar(respon.data)
-        })
-        .catch((error) => console.log(error))
+    const handleGetList = async () => {
+        try {
+            const res = await requestAPI.detailCar(id)
+            console.log(res)
+            setCar(res.data)
+        } catch (error) {
+            console.log(error)
+        }
     }
 
     return (
-        <div className='detail'>
-            <div className="detail-container">
+            <div className="container detail-wrapper">
                 <div className='detail-left'>
                     <div>
                         <h5 className='title fw-bold ms-3'>Tentang Paket</h5>
@@ -74,7 +74,6 @@ const DetailSection = () => {
                     <Link className='btn-detail' to={`/search`}>Back</Link>
                 </div>
             </div>
-        </div>
     );
 }
 

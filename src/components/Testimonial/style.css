@@ -1,13 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
 }
 
 .testimonial {
-    position: relative;
-    bottom: 100px;
-    overflow: hidden;
+    content: '';
 }
 
 .testi-p1 {
@@ -15,8 +12,7 @@
     font-weight: 700;
     color: #000000;
     font-size: 24px;
-    margin-top: 110px;
-    margin-bottom: 15px;
+    margin-top: 100px;
     text-align: center; 
 }
 
@@ -26,22 +22,18 @@
     color: #000000;
     font-size: 14px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .testi-wrap {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
-    transition: transform 0.8s ease-in-out;
-    position: relative;
-    left: 220px;
 }
 
 .list-testi {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .testi-card {
@@ -53,7 +45,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
 }
 
 .testi-card .testi-img {
@@ -75,13 +66,9 @@
     font-weight: 700;
     color: #000000;
     font-size: 14px;
-    letter-spacing: 0;
-    line-height: 20px;
-    text-align: start;
 }
 
-.testi-card .testi-div {
-    width: 415px;
+.testi-card .testi-name {
     font-family: "Arial-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
@@ -94,39 +81,23 @@
     align-self: center;
 }
 
-.testimonial .testi-carousel {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.testimonial .testi-icon {
-    border: 1px solid black;
-    border-radius: 100%;
+.carousel-testi {
+    background-color: black;
     width: 25px;
     height: 25px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    padding: 5px;
+    border-radius: 100%;
+    position: relative;
 }
 
-.testimonial .testi-icon:active {
-    background-color: rgba(92, 184, 95, 1);
-    color: white;
-    border: 1px solid rgba(92, 184, 95, 1);
-    border-radius: 100%;
+.carousel-testi:focus {
+    background-color: #5CB85F;
 }
 
 @media (max-width:576px) {
-    .testi-wrap {
-        transition: transform 0.4s ease-in-out;
-        position: relative;
-        justify-content: center;
-    }
-
     .testimonial .testi-card {
-        width: 328px;
-        height: 392px;
+        width: 300px;
+        height: 390px;
     }
 
     .testimonial .testi-desc {
@@ -143,11 +114,6 @@
         position: relative;
         left: 90px;
         bottom: 10px;
-    }
-    
-    .testimonial .testi-div {
-        width: 150px;
-        font-size: 15px;
     }
 
     .testimonial .testi-img {
