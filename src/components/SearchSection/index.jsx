@@ -139,7 +139,7 @@ const SearchSection = () => {
                             <p className='namecar'>{car.name}</p>
                             <p className='listcar-price'>{`Rp. ${car.price} / hari`}</p>
                             <p className='listcar-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vel eos vero reiciendis ad cum odio, accusantium sunt.</p>
-                            <Link to={`/detail/${car.id}`}><button className='listcar-btn'>Pilih Mobil</button></Link>
+                            <Link className='text-decoration-none' to={`/detail/${car.id}`}><button className='listcar-btn'>Pilih Mobil</button></Link>
                         </div>
                     </div>
                 ))

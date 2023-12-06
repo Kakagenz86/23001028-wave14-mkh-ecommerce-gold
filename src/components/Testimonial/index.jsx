@@ -27,14 +27,14 @@ function Testimonial(props) {
             </div>
           ))}
         </div>
-        <div className='d-flex justify-content-center mt-3 gap-3 '>
+        <div className='d-flex justify-content-center mt-3 gap-3'>
           <button className="carousel-control-prev carousel-testi" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon testi-prev" aria-hidden="true"></span>
+            {/* <span className="visually-hidden">Previous</span> */}
           </button>
           <button className="carousel-control-next carousel-testi" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon testi-next" aria-hidden="true"></span>
+            {/* <span className="visually-hidden">Next</span> */}
           </button>
         </div>
       </div>

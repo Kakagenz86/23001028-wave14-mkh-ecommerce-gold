@@ -71,7 +71,6 @@ const DetailSection = () => {
                         <p>Total</p>
                         <p>{`Rp.${car.price}`}</p>    
                     </div>
-                    <Link className='btn-detail' to={`/search`}>Back</Link>
                 </div>
             </div>
     );

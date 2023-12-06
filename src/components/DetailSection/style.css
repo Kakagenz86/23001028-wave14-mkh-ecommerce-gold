@@ -69,23 +69,6 @@
     margin-right: 16px;
 }
 
-.btn-detail {
-    width: 100px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    position: relative;
-    left: 285px;
-    top: 25px;
-}
-
-.btn-detail:hover {
-    background-color: #5CB85F;
-    color: white;
-}
-
 @media (max-width: 576px) {
     .detail-wrapper {
         display: flex;
@@ -94,10 +77,18 @@
     }
 
     .detail-left {
-        width: 400px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
+    }
+
+    .detail-right {
+        width: 100%;
+    }
+
+    .detail-img {
+        width: 90%;
     }
 
     .detail-desc {

@@ -82,7 +82,7 @@
 }
 
 .carousel-testi {
-    background-color: black;
+    border: 1px solid black;
     width: 25px;
     height: 25px;
     padding: 5px;
@@ -90,8 +90,18 @@
     position: relative;
 }
 
-.carousel-testi:focus {
+.carousel-testi:hover {
     background-color: #5CB85F;
+}
+
+.testi-prev,
+.testi-next {
+    filter: invert(100%);
+}
+
+.testi-prev:hover,
+.testi-next:hover {
+    filter: invert(0%);
 }
 
 @media (max-width:576px) {
