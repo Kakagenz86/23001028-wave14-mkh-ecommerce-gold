@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return ( 
-            <div class="banner container">
-                <div class="header-banner">
-                    <p class="text">Sewa Mobil di (Lokasimu) Sekarang</p>
-                    <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            <div className="banner container">
+                <div className="header-banner">
+                    <p className="text">Sewa Mobil di (Lokasimu) Sekarang</p>
+                    <p className="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.</p>
-                        <Link to={`/search`}><button  class="btn-banner">Mulai Sewa Mobil</button></Link>
+                        <Link to={`/search`}><button  className="btn-banner">Mulai Sewa Mobil</button></Link>
                 </div>
             </div>
     );

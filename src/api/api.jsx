@@ -11,3 +11,15 @@ export async function detailCar( id ) {
 
     return response
 }
+
+export async function signUp (bodyPayload) {
+    const res = await axios.post(`https://api-car-rental.binaracademy.org/customer/auth/register`, bodyPayload)
+
+    return res
+}
+
+export async function signIn (bodyPayload) {
+    const res = await axios.post(`https://api-car-rental.binaracademy.org/customer/auth/login`, bodyPayload)
+
+    return res
+}

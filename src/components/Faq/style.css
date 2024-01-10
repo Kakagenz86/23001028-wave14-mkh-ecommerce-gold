@@ -42,7 +42,7 @@
 }
 
 .faq .faq-item {
-    width: 650px;
+    width: 600px;
     border: 1px solid #D4D4D4;
 }
 
@@ -53,6 +53,6 @@
     }
 
     .faq .faq-item {
-        width: 330px;
+        width: 100%;
     }
 }

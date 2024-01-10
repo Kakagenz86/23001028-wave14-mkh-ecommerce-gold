@@ -13,7 +13,7 @@ const Faq = (props) => {
                 </div>
                 <div className="col-lg-6 col-md-12 col-sm-12">
                     {props.data.map((FaqSection, index) => (
-                                    <div className="faq-group">
+                                    <div key={index} className="faq-group">
                                         <Dropdown>
                                             <div>
                                                 <Dropdown.Toggle id="dropdown-basic"  className='faq-wrapper' key={index}>

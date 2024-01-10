@@ -1,13 +1,12 @@
-import React from 'react'
 import './style.css'
 import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import * as requestAPI from '../../api/api'
 
 const DetailSection = () => {
     const [car, setCar] = useState({});
     const {id} = useParams()
+
 
     useEffect(() => {
         handleGetList();
@@ -32,32 +31,32 @@ const DetailSection = () => {
                     <div>
                         <h6 className='title fw-bold ms-3 mt-4'>Include</h6>
                         <div>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Apa saja yang termasuk dalam paket misal durasi max 12 jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Sudah termasuk bensin selama 12 jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Sudah termasuk Tiket Wisata</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Sudah termasuk pajak</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Apa saja yang termasuk dalam paket misal durasi max 12 jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Sudah termasuk bensin selama 12 jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Sudah termasuk Tiket Wisata</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Sudah termasuk pajak</p>
                         </div>
                     </div>
                     <div>
                         <h6 className='title fw-bold ms-3'>Exclude</h6>
                         <div>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
                         </div>
                     </div>
                     <div>
                         <h6 className='title fw-bold ms-3'>Refund, Reschedule, Overtime</h6>
                         <div>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
-                            <p className='detail-desc'><i class="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk biaya makan sopir Rp 75.000/hari</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</p>
+                            <p className='detail-desc'><i className="bi bi-dot detail-icon"></i>Tidak termasuk akomodasi penginapan</p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +68,7 @@ const DetailSection = () => {
                     <p className='ms-3 detail-category'>{car.category}</p>
                     <div className='detail-price'>
                         <p>Total</p>
-                        <p>{`Rp.${car.price}`}</p>    
+                        <p className='fw-bolder'>{`Rp.${car.price}`}</p>    
                     </div>
                 </div>
             </div>

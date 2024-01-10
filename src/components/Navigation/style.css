@@ -39,3 +39,13 @@
     font-weight: 400;
     line-height: 20px;
 }
+
+.btn-nav-login {
+    background-color: #5cb85f;
+    color: white !important;
+    padding: 5px 15px;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    top: -5px;
+}
